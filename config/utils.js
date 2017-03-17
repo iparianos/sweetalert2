@@ -1,3 +1,5 @@
+'use strict'
+
 const rollup = require('rollup').rollup
 const babel = require('rollup-plugin-babel')
 const pack = require('../package.json')

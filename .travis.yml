@@ -15,7 +15,12 @@ before_script:
   - gulp
 
 script:
-  - xvfb-run testem ci --reporter dot
+  #- xvfb-run testem ci --reporter dot
+  - npm install gemini selenium-standalone chromedriver
+  - selenium-standalone install
+  - xvfb-run -a selenium-standalone start &
+  - sleep 10
+  - gemini test
 
 deploy:
   api_key:
