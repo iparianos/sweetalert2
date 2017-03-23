@@ -17,7 +17,6 @@ before_script:
 
 script:
   #- xvfb-run testem ci --reporter dot
-  - npm install gemini
   - selenium-standalone install
   - xvfb-run -a selenium-standalone start &
   - sleep 10

@@ -14,6 +14,7 @@
     "babel-plugin-external-helpers": "latest",
     "babel-plugin-transform-object-assign": "latest",
     "babel-preset-es2015": "latest",
+    "gemini": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
