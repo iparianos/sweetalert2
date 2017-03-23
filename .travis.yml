@@ -10,7 +10,9 @@ cache:
 addons:
   selenium: latest
   firefox: "51.0" # testem doesn't work with Firefox 52, revisit and set to latest if possible
-  google-chrome: latest
+  apt:
+    packages:
+      - google-chrome-stable
 
 before_script:
   - gulp
