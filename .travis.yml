@@ -8,6 +8,7 @@ cache:
     - node_modules
 
 addons:
+  selenium: latest
   firefox: "51.0" # testem doesn't work with Firefox 52, revisit and set to latest if possible
   google-chrome: latest
 
@@ -16,7 +17,7 @@ before_script:
 
 script:
   #- xvfb-run testem ci --reporter dot
-  - npm install gemini selenium-standalone chromedriver
+  - npm install gemini
   - selenium-standalone install
   - xvfb-run -a selenium-standalone start &
   - sleep 10
