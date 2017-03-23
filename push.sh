@@ -11,4 +11,4 @@ branch_name="$(git symbolic-ref HEAD 2>/dev/null)"
 echo $branch_name
 branch_name=${branch_name##refs/heads/}
 echo $branch_name
-git push "https://${GH_TOKEN}@github.com/limonte/sweetalert2.git" origin $branch_name
+git push "https://${GH_TOKEN}@github.com/limonte/sweetalert2.git" origin HEAD:$branch_name
