@@ -34,3 +34,7 @@ deploy:
 notifications:
   email:
     on_success: never
+
+env:
+  global:
+    secure: XEMIc26VO9mOvVSPFwNVYGIPeOgMoyvJ0xTrHFuWYeD++ashpi4URQ41bR8LozD9q6JLKP7emLBLt/ExTTKA2C3Z/8bVdC81x//unH6ZxtpQxDIBupXgPvCESiPu16F7CDRrgmOymYoAH9B13C03wjm0eLo8JYq4AMwLTR/TmCo=
