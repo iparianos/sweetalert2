@@ -22,7 +22,12 @@ script:
   - selenium-standalone install
   - xvfb-run -a selenium-standalone start &
   - sleep 10
-  - gemini test
+  - gemini update
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  - git add .
+  - git commit -m "Travis build: $TRAVIS_BUILD_NUMBER"
+  - git push
 
 deploy:
   api_key:
