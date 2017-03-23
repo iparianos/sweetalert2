@@ -23,6 +23,7 @@ script:
   - xvfb-run -a selenium-standalone start &
   - sleep 10
   - gemini update
+  - ls -la gemini/screens/**/*.png
   - ./push.sh
 
 deploy:
