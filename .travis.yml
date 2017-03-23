@@ -19,8 +19,6 @@ before_script:
 
 script:
   #- xvfb-run testem ci --reporter dot
-  - google-chrome --version
-  - chromedriver --version
   - selenium-standalone install
   - xvfb-run -a selenium-standalone start &
   - sleep 10
